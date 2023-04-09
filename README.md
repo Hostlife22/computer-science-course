@@ -1,4 +1,4 @@
-<h1 align="center">Template TypeScript Node Package</h1>
+<h1 align="center">Computer-science-course</h1>
 
 <p align="center">A quickstart-friendly TypeScript template with comprehensive formatting, linting, releases, testing, and other great tooling built-in. ✨</p>
 
@@ -52,7 +52,7 @@ Thanks! 💖
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Hostlife22"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Serafim Sen"/><br /><sub><b>Serafim Sen</b></sub></a><br /><a href="#tool-Hostlife22" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Hostlife22"><img src="https://avatars.githubusercontent.com/u/90197278?v=4?s=100" width="100px;" alt="Serafim Sen"/><br /><sub><b>Serafim Sen</b></sub></a><br /><a href="#tool-Hostlife22" title="Tools">🔧</a></td>
     </tr>
   </tbody>
 </table>
