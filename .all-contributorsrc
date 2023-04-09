@@ -5,21 +5,7 @@
   "contributors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
-      "contributions": [
-        "bug",
-        "code",
-        "content",
-        "example",
-        "ideas",
-        "infra",
-        "maintenance",
-        "platform",
-        "projectManagement",
-        "review",
-        "security",
-        "tool",
-        "test"
-      ],
+      "contributions": ["tool"],
       "login": "Hostlife22",
       "name": "Serafim Sen",
       "profile": "https://github.com/Hostlife22"
@@ -27,13 +13,10 @@
   ],
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": true,
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "projectName": "computer-science-course",
   "projectOwner": "Hostlife22",
   "repoHost": "https://github.com",
   "repoType": "github"
 }
-
