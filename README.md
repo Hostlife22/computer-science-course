@@ -26,18 +26,6 @@
     <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-21bb42.svg" />
 </p>
 
-## Usage
-
-```shell
-npm i template-typescript-node-package
-```
-
-```ts
-import { greet } from "template-typescript-node-package";
-
-greet("Hello, world!");
-```
-
 ## Development
 
 See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then [`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md).
