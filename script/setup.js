@@ -52,8 +52,8 @@ try {
 			);
 
 			return {
-				defaultOwner: "UserName",
-				defaultRepository: "my-lovely-repository",
+				defaultOwner: "Hostlife22",
+				defaultRepository: "computer-science-course",
 			};
 		}
 
@@ -181,7 +181,7 @@ try {
 						contributors: [
 							{
 								...existingContributors.contributors.find(
-									({ login }) => login === "JoshuaKGoldberg"
+									({ login }) => login === "Hostlife22"
 								),
 								contributions: ["tool"],
 							},
@@ -243,8 +243,8 @@ try {
 
 			for (const [from, to, files = ["./.github/**/*", "./*.*"]] of [
 				[new RegExp(existingPackage.description, "g"), description],
-				[/Template TypeScript Node Package/g, title],
-				[/JoshuaKGoldberg/g, owner],
+				[/computer-science-course/g, title],
+				[/Hostlife22/g, owner],
 				[/computer-science-course/g, repository],
 				[/"setup": ".*",/g, ``, "./package.json"],
 				[/"setup:test": ".*",/g, ``, "./package.json"],
@@ -315,7 +315,7 @@ try {
 				``,
 				`<!-- You can remove this notice if you don't want it 🙂 no worries! -->`,
 				``,
-				`> 💙 This package is based on [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)'s [computer-science-course](https://github.com/JoshuaKGoldberg/computer-science-course).`,
+				`> 💙 This package is based on [@Hostlife22](https://github.com/Hostlife22)'s [computer-science-course](https://github.com/Hostlife22/computer-science-course).`,
 				``,
 			].join(EOL);
 
@@ -452,7 +452,7 @@ try {
 			async () => {
 				// Note: keep this inline script in sync with .github/workflows/release.yml!
 				// Todo: it would be nice to not have two sources of truth...
-				// https://github.com/JoshuaKGoldberg/computer-science-course/issues/145
+				// https://github.com/Hostlife22/computer-science-course/issues/145
 				await octokit.request(
 					`PUT /repos/${owner}/${repository}/branches/main/protection`,
 					{
