@@ -57,8 +57,8 @@ try {
 			};
 		}
 
-		const [, defaultOwner, defaultRepository] = gitRemoteFetch.stdout.match(
-			/\s.+\/([^/]+)\/([^/]+) \(fetch\)/
+		const [defaultOwner, defaultRepository] = gitRemoteFetch.stdout.match(
+			/:\s*([^\/]+)\/(.+)\.git/
 		);
 
 		return { defaultOwner, defaultRepository };

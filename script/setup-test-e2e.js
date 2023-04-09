@@ -3,10 +3,11 @@ import { strict as assert } from "node:assert";
 import { $ } from "execa";
 import { promises as fs } from "fs";
 
-const description = "New Description Test";
-const owner = "NewOwnerTest";
-const title = "New Title Test";
-const repository = "new-repository-test";
+const description =
+	"A quickstart-friendly TypeScript template with comprehensive formatting, linting, releases, testing, and other great tooling built-in. ✨";
+const owner = "Hostlife22";
+const title = "computer-science-course";
+const repository = "computer-science-course";
 
 const result =
 	await $`pnpm run setup --description ${description} --owner ${owner} --title ${title} --repository ${repository} --skip-api`;
