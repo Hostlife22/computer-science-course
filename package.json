@@ -7,7 +7,7 @@
 		"url": "git@github.com-sima:Hostlife22/Computer-science.git"
 	},
 	"license": "MIT",
-	"author": "Serafim Sen <npm@sima.serafim2021@mail.ru>",
+	"author": "Hostlife22",
 	"type": "module",
 	"main": "./lib/index.js",
 	"files": [
@@ -27,8 +27,6 @@
 		"lint:packages": "pnpm-deduplicate --list",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky install",
-		"setup": "node script/setup.js",
-		"setup:test": "node script/setup-test-e2e.js",
 		"should-semantic-release": "should-semantic-release --verbose",
 		"test": "vitest"
 	},
