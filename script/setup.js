@@ -18,7 +18,7 @@ try {
 	console.clear();
 	console.log(
 		chalk.greenBright`Welcome to the`,
-		chalk.bgGreenBright.black`template-typescript-node-package`,
+		chalk.bgGreenBright.black`computer-science-course`,
 		chalk.greenBright`package setup! 🎉`
 	);
 	console.log();
@@ -52,8 +52,8 @@ try {
 			);
 
 			return {
-				defaultOwner: "UserName",
-				defaultRepository: "my-lovely-repository",
+				defaultOwner: "Hostlife22",
+				defaultRepository: "computer-science-course",
 			};
 		}
 
@@ -181,7 +181,7 @@ try {
 						contributors: [
 							{
 								...existingContributors.contributors.find(
-									({ login }) => login === "JoshuaKGoldberg"
+									({ login }) => login === "Hostlife22"
 								),
 								contributions: ["tool"],
 							},
@@ -243,9 +243,9 @@ try {
 
 			for (const [from, to, files = ["./.github/**/*", "./*.*"]] of [
 				[new RegExp(existingPackage.description, "g"), description],
-				[/Template TypeScript Node Package/g, title],
-				[/JoshuaKGoldberg/g, owner],
-				[/template-typescript-node-package/g, repository],
+				[/computer-science-course/g, title],
+				[/Hostlife22/g, owner],
+				[/computer-science-course/g, repository],
 				[/"setup": ".*",/g, ``, "./package.json"],
 				[/"setup:test": ".*",/g, ``, "./package.json"],
 				[/"author": ".+"/g, `"author": "${npmAuthor}"`, "./package.json"],
@@ -315,19 +315,18 @@ try {
 				``,
 				`<!-- You can remove this notice if you don't want it 🙂 no worries! -->`,
 				``,
-				`> 💙 This package is based on [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)'s [template-typescript-node-package](https://github.com/JoshuaKGoldberg/template-typescript-node-package).`,
+				`> 💙 This package is based on [@Hostlife22](https://github.com/Hostlife22)'s [computer-science-course](https://github.com/Hostlife22/computer-science-course).`,
 				``,
 			].join(EOL);
 
 			await fs.appendFile("./README.md", endOfReadmeNotice);
 		},
 		{
-			startText:
-				"Appending template-typescript-node-package notice to 'README.md'...",
-			successText: `Appended template-typescript-node-package notice to 'README.md'.`,
-			stopText: `Error appending template-typescript-node-package notice to 'README.md'.`,
+			startText: "Appending computer-science-course notice to 'README.md'...",
+			successText: `Appended computer-science-course notice to 'README.md'.`,
+			stopText: `Error appending computer-science-course notice to 'README.md'.`,
 			errorText:
-				"Failed to append template-typescript-node-package notice to 'README.md'. ",
+				"Failed to append computer-science-course notice to 'README.md'. ",
 		}
 	);
 
@@ -453,7 +452,7 @@ try {
 			async () => {
 				// Note: keep this inline script in sync with .github/workflows/release.yml!
 				// Todo: it would be nice to not have two sources of truth...
-				// https://github.com/JoshuaKGoldberg/template-typescript-node-package/issues/145
+				// https://github.com/Hostlife22/computer-science-course/issues/145
 				await octokit.request(
 					`PUT /repos/${owner}/${repository}/branches/main/protection`,
 					{
