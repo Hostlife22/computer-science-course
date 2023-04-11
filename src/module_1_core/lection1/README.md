@@ -28,6 +28,8 @@ The set method changes the bit value and returns the new Uint8Array array value.
 createBitAccessor
 
 ```js
+import { createBitAccessor } from "createBitAccessor";
+
 const bitAccessor = createBitAccessor(new Uint8Array([0b1110, 0b1101]));
 
 console.log(bitAccessor.get(0, 1)); // 1
