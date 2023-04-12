@@ -2,7 +2,8 @@
 
 ## Task: Write a function for working with bits
 
-To complete the task, you need to write a function called createBitAccessor which creates an object for working with bits and takes a Uint8Array array as input. Returns an object with get and set methods that allow you to access the bit of a specific element and change its value accordingly.
+To complete the task, you need to write a function called createBitAccessor which creates an object for working with bits and takes a Uint8Array array as input.
+Returns an object with get and set methods that allow you to access the bit of a specific element and change its value accordingly.
 
 ### Parameters
 
