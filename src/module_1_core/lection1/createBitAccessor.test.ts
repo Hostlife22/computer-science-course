@@ -12,6 +12,21 @@ describe("createBitAccessor", () => {
 		bitAccessor = createBitAccessor(arr);
 	});
 
+	it("should throw an error if argument is not an instance of Uint8Array", () => {
+		expect(() => createBitAccessor([] as any)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+		expect(() => createBitAccessor({} as any)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+		expect(() => createBitAccessor("" as any)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+		expect(() => createBitAccessor(123 as any)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+	});
+
 	describe("get", () => {
 		it("should throw an error if index is out of range", () => {
 			expect(() => bitAccessor.get(-1, 0)).toThrowError(
