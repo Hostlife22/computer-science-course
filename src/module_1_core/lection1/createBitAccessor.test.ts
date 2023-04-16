@@ -1,7 +1,48 @@
 import { beforeEach, describe, expect, it } from "vitest";
 
-import { createBitAccessor } from "./createBitAccessor.js";
+import {
+	createBitAccessor,
+	validateBitAccessorParams,
+} from "./createBitAccessor.js";
 import { BitAccessor, BitAccessorError } from "./types.js";
+
+describe("validateBitAccessorParams", () => {
+	let arr: Uint8Array;
+
+	beforeEach(() => {
+		arr = new Uint8Array([0b1110, 0b1101]);
+	});
+
+	it("should throw an error if arr is not an instance of Uint8Array", () => {
+		expect(() => validateBitAccessorParams([] as any, 0, 0)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+		expect(() => validateBitAccessorParams({} as any, 0, 0)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+		expect(() => validateBitAccessorParams(123 as any, 0, 0)).toThrowError(
+			BitAccessorError.INVALID_ARGUMENT
+		);
+	});
+
+	it("should throw an error if index is less than 0 or greater than or equal to arr length", () => {
+		expect(() => validateBitAccessorParams(arr, -1, 0)).toThrowError(
+			BitAccessorError.INVALID_INDEX
+		);
+		expect(() => validateBitAccessorParams(arr, 2, 0)).toThrowError(
+			BitAccessorError.INVALID_INDEX
+		);
+	});
+
+	it("should throw an error if bitNumber is less than 0 or greater than 7", () => {
+		expect(() => validateBitAccessorParams(arr, 0, -1)).toThrowError(
+			BitAccessorError.INVALID_BIT_NUMBER
+		);
+		expect(() => validateBitAccessorParams(arr, 0, 8)).toThrowError(
+			BitAccessorError.INVALID_BIT_NUMBER
+		);
+	});
+});
 
 describe("createBitAccessor", () => {
 	let arr: Uint8Array;
@@ -12,19 +53,10 @@ describe("createBitAccessor", () => {
 		bitAccessor = createBitAccessor(arr);
 	});
 
-	it("should throw an error if argument is not an instance of Uint8Array", () => {
-		expect(() => createBitAccessor([] as any)).toThrowError(
-			BitAccessorError.INVALID_ARGUMENT
-		);
-		expect(() => createBitAccessor({} as any)).toThrowError(
-			BitAccessorError.INVALID_ARGUMENT
-		);
-		expect(() => createBitAccessor("" as any)).toThrowError(
-			BitAccessorError.INVALID_ARGUMENT
-		);
-		expect(() => createBitAccessor(123 as any)).toThrowError(
-			BitAccessorError.INVALID_ARGUMENT
-		);
+	it("should create a valid BitAccessor object", () => {
+		expect(bitAccessor).toBeDefined();
+		expect(bitAccessor.get).toBeDefined();
+		expect(bitAccessor.set).toBeDefined();
 	});
 
 	describe("get", () => {
