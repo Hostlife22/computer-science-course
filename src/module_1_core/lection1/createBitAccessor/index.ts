@@ -1,2 +1,2 @@
-export * from "./createBitAccessor.js";
-export * from "./types.js";
+export * from "./createBitAccessor";
+export * from "./types";

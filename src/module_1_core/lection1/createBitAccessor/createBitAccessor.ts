@@ -1,4 +1,4 @@
-import { BitAccessor, BitAccessorError } from "./types.js";
+import { BitAccessor, BitAccessorError } from "./types";
 
 export const validateBitAccessorParams = (
 	arr: Uint8Array,
@@ -29,3 +29,9 @@ export const createBitAccessor = (arr: Uint8Array): BitAccessor => {
 		},
 	};
 };
+
+const bitAccessor = createBitAccessor(new Uint8Array([0b1110, 0b1101]));
+
+console.log(bitAccessor.get(0, 1)); // 1
+console.log(bitAccessor.set(0, 1, 0)); // undefined
+console.log(bitAccessor.get(0, 1)); // 0
