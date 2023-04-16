@@ -3,8 +3,8 @@ import { beforeEach, describe, expect, it } from "vitest";
 import {
 	createBitAccessor,
 	validateBitAccessorParams,
-} from "./createBitAccessor.js";
-import { BitAccessor, BitAccessorError } from "./types.js";
+} from "./createBitAccessor";
+import { BitAccessor, BitAccessorError } from "./types";
 
 describe("validateBitAccessorParams", () => {
 	let arr: Uint8Array;

@@ -1,1 +1,1 @@
-export * from "./module_1_core/index.js";
+export * from "./module_1_core";

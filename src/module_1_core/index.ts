@@ -1,1 +1,1 @@
-export * from "./lection1/createBitAccessor/index.js";
+export * from "./lection1/createBitAccessor";
