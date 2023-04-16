@@ -12,7 +12,10 @@ module.exports = {
 	mode,
 	target,
 	devtool,
-	entry: entries,
+	entry: {
+		index: "./src/index.ts",
+		...entries,
+	},
 	output: {
 		filename: "[name].bundle.js",
 		path: paths.lib,

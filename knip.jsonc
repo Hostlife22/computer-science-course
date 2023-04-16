@@ -2,6 +2,12 @@
 	"$schema": "https://unpkg.com/knip@next/schema.json",
 	"entry": "src/index.ts!",
 	"ignoreBinaries": ["cat", "gh"],
-	"ignoreDependencies": ["all-contributors-cli"],
+	"ignoreDependencies": [
+		"all-contributors-cli",
+		"html-webpack-plugin",
+		"ts-loader",
+		"webpack-cli",
+		"webpack-dev-server"
+	],
 	"project": "src/**/*.ts!"
 }
