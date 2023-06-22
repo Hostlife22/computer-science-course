@@ -62,7 +62,7 @@
 		"knip": "2.14.1",
 		"lint-staged": "^13.2.1",
 		"markdownlint": "^0.29.0",
-		"markdownlint-cli": "^0.33.0",
+		"markdownlint-cli": "^0.35.0",
 		"npm-package-json-lint": "^6.4.0",
 		"npm-package-json-lint-config-default": "^5.0.0",
 		"pnpm-deduplicate": "^0.4.2",
