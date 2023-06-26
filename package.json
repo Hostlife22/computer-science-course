@@ -79,7 +79,7 @@
 		"webpack-dev-server": "^4.13.3",
 		"yaml-eslint-parser": "^1.2.0"
 	},
-	"packageManager": "pnpm@7.33.1",
+	"packageManager": "pnpm@7.33.2",
 	"engines": {
 		"node": ">=18"
 	}
