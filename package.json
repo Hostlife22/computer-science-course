@@ -68,7 +68,7 @@
 		"pnpm-deduplicate": "^0.4.2",
 		"prettier": "^2.8.7",
 		"prettier-plugin-packagejson": "^2.4.3",
-		"release-it": "^15.10.1",
+		"release-it": "^16.0.0",
 		"sentences-per-line": "^0.2.1",
 		"should-semantic-release": "^0.1.1",
 		"ts-loader": "^9.4.2",
