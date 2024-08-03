@@ -31,7 +31,7 @@ specifiers:
   npm-package-json-lint: ^6.4.0
   npm-package-json-lint-config-default: ^6.0.0
   pnpm-deduplicate: ^0.4.2
-  prettier: ^2.8.7
+  prettier: ^3.0.0
   prettier-plugin-packagejson: ^2.4.3
   release-it: ^15.10.1
   sentences-per-line: ^0.2.1
@@ -75,8 +75,8 @@ devDependencies:
   npm-package-json-lint: 6.4.0
   npm-package-json-lint-config-default: 6.0.0_ogc4gh2psjwvuyt5uwb7bwur54
   pnpm-deduplicate: 0.4.2
-  prettier: 2.8.8
-  prettier-plugin-packagejson: 2.4.3_prettier@2.8.8
+  prettier: 3.3.3
+  prettier-plugin-packagejson: 2.4.3_prettier@3.3.3
   release-it: 15.10.1
   sentences-per-line: 0.2.1
   should-semantic-release: 0.2.1
@@ -6670,7 +6670,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-packagejson/2.4.3_prettier@2.8.8:
+  /prettier-plugin-packagejson/2.4.3_prettier@3.3.3:
     resolution: {integrity: sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -6678,14 +6678,14 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.3.3
       sort-package-json: 2.4.1
       synckit: 0.8.5
     dev: true
 
-  /prettier/2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
